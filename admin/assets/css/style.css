@@ -128,12 +128,6 @@ input:active {
     font-size: 5rem;
     margin-bottom: 3rem;
   }
-  #home {
-    background-image: url('../img/bgHome.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -2rem;
-  }
   #category {
     background-color: var(--blackSecondary);
   }
