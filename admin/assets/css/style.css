@@ -1,0 +1,232 @@
+:root {
+  --blackPrimary: #212121;
+  --blackSecondary: #2d2d2d;
+  --white: #ffffff;
+  --gray: #c4c4c4;
+}
+
+body {
+  background-color: var(--blackPrimary) !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  display: hidden;
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: hidden;
+}
+
+.btn-gray {
+  background-color: var(--gray) !important;
+  color: var(--blackPrimary) !important;
+}
+.btn-outline-gray {
+  background-color: transparent !important;
+  color: var(--gray) !important;
+  outline: none;
+  border: 1px solid var(--gray) !important;
+}
+
+.btn:focus,
+.btn:active,
+button:focus,
+button:active,
+input:focus,
+input:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.mobile input {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--white);
+  color: var(--white);
+}
+
+.mobile input::-webkit-input-placeholder {
+  color: var(--gray);
+}
+
+.mobile input:focus {
+  color: var(--gray);
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--white);
+}
+
+.mobile a {
+  text-decoration: none;
+}
+
+.nav-item .active {
+  border-right: 2px solid var(--white);
+}
+
+.navigations {
+  position: fixed;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  background-color: var(--gray);
+  height: 60px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.navigations .active {
+  border-bottom: 3px solid var(--blackPrimary);
+}
+
+.modal .btn {
+  font-size: 25px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+#button {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.5rem;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  color: white;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.desktop img {
+  margin: 5rem 0 5rem 0;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  /*-- index start --*/
+  #home h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+  #home {
+    background-image: url('../img/bgHome.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -2rem;
+  }
+  #category {
+    background-color: var(--blackSecondary);
+  }
+  #category h2 {
+    font-size: 2rem;
+  }
+  #category h3 {
+    color: var(--gray);
+  }
+  #category .slick-slide {
+    margin: 0.1rem;
+  }
+  #category .slickCategoryBox {
+    height: 11rem;
+    width: 100%;
+    background-color: var(--blackPrimary);
+    border-radius: 10px;
+  }
+  #category .col-4 img {
+    border-radius: 10px;
+  }
+  #contactUs h2 {
+    font-size: 2rem;
+  }
+  #contactUs h3 {
+    color: var(--gray);
+  }
+  #contactUs .col {
+    background-color: var(--blackSecondary);
+    border-radius: 10px;
+  }
+  /*-- index end --*/
+  /*-- sign in start --*/
+  #signIn {
+    background-image: url('../img/bg2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #signIn h1 {
+    font-size: 80px;
+  }
+  #signIn .btn {
+    font-size: 25px;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  /*-- sign in end --*/
+  /*-- sign up start --*/
+  #signUp {
+    background-image: url('../img/bg2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #signUp h1 {
+    font-size: 80px;
+  }
+  #signUp .line {
+    height: 0.1rem;
+    width: 100%;
+    background-color: var(--white);
+  }
+  #signUp .circle {
+    width: 3rem;
+    height: 3rem;
+    margin-top: -1.4rem;
+  }
+  #signUp .btn {
+    font-size: 25px;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  /*-- sign up end --*/
+  /*-- dashboard start --*/
+  #dashboard {
+    background-image: url('../img/bg1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 1rem;
+  }
+  #dashboard .quotes h1 {
+    font-size: 40px;
+  }
+  #dashboard .category .col {
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--gray);
+  }
+  #dashboard .slickMenuBox {
+    height: 14rem;
+    width: 100%;
+    background-color: var(--blackSecondary);
+    border-radius: 20px;
+    margin: 0.1rem;
+  }
+  /*-- dashboard end --*/
+}
